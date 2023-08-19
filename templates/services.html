@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %}services{% endblock title %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Shop</title>
+    <link 
+    href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Ice Cream Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Delicious Ice Cream Creations</h2>
+        <p>Indulge in our wide range of ice cream flavors, sundaes, and more!</p>
+        <a href="#menu" class="cta-button">View Our Menu</a>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <img src="vanilla.jpg" alt="Vanilla Ice Cream">
+            <h3>Vanilla Ice Cream</h3>
+            <p>Classic vanilla ice cream, perfect for any occasion.</p>
+        </div>
+        <div class="menu-item">
+            <img src="chocolate.jpg" alt="Chocolate Ice Cream">
+            <h3>Chocolate Ice Cream</h3>
+            <p>Rich and creamy chocolate ice cream that melts in your mouth.</p>
+        </div>
+        <!-- Add more menu items here -->
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are passionate about creating the most delicious ice cream in town. Our ice cream is made with love and the finest ingredients.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, feel free to contact us:</p>
+        <p>Email: <a href="mailto:info@icecreamshop.com">info@icecreamshop.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">123-456-7890</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Ice Cream Shop</p>
+    </footer>
+</body>
+</html>
+
+{% endblock body %}
